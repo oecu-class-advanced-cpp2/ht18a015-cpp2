@@ -48,59 +48,14 @@ namespace cpp2 {
 	}
 
 
-	int mcxi::hanntei(char c)
-	{
-		if (c == '2')
-		{
-			return 2;
+	int unit(char c) {
+		switch (c) {
+		case 'm': return 1000;
+		case 'c': return 100;
+		case 'x': return 10;
+		case 'i': return 1;
 		}
-		else if (c == '3')
-		{
-			return 3;
-		}
-		else if (c == '4')
-		{
-			return 4;
-		}
-		else if (c == '5')
-		{
-			return 5;
-		}
-		else if (c == '6')
-		{
-			return 6;
-		}
-		else if (c == '7')
-		{
-			return 7;
-		}
-		else if (c == '8')
-		{
-			return 8;
-		}
-		else if (c == '9')
-		{
-			return 9;
-		}
-		else if (c == 'm')
-		{
-			return 1000;
-		}
-		else if (c == 'c')
-		{
-			return 100;
-		}
-		else if (c == 'x')
-		{
-			return 10;
-		}
-		else if (c == 'i')
-		{
-			return 1;
-		}
-
-		return 0;
-	}
+	};
 } // namespace cpp2
 int main() {
 	cpp2::mcxi a0("xi");
